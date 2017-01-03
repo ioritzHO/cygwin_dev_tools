@@ -1,0 +1,11 @@
+# Ignore everything
+/*
+/*/
+
+# But not these files...
+!.gitignore
+!/.vim/
+!/_templates
+!.bashrc
+!.minttyrc
+!.tmux.conf
