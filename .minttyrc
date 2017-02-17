@@ -24,3 +24,5 @@ Rows=33
 Term=xterm-256color
 Locale=es_ES
 Charset=UTF-8
+BellType=0
+CursorType=block
