@@ -198,6 +198,11 @@
 # alias cd=cd_func
 
 alias py=python
+alias op=cygstart
+alias rn='ranger --choosedir=$HOME/rangerdir; LASTDIR=`cat $HOME/rangerdir`; cd "$LASTDIR"'
 
 set -o vi
+
+#python config
+export PYTHONSTARTUP=~/.pythonrc
 
