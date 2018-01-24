@@ -18,7 +18,7 @@ BoldMagenta=175,135,175
 BoldCyan=95,175,135
 BoldWhite=188,188,188
 BoldAsFont=-1
-Font=Consolas
+Font=Inconsolata-g for Powerline
 Columns=115
 Rows=33
 Term=xterm-256color
@@ -26,3 +26,7 @@ Locale=es_ES
 Charset=UTF-8
 BellType=0
 CursorType=block
+FontHeight=10
+FontWeight=500
+
+Scrollbar=none

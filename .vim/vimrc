@@ -7,7 +7,6 @@ filetype plugin indent on       " load file type plugins + indentation
 set background=dark
 set number
 set relativenumber
-set gfn=Consolas:h9
 colorscheme lucius
 LuciusDarkLowContrast
 
@@ -26,25 +25,23 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-" statusline
-" format markers:
-"   %t File name (tail) of file in the buffer
-"   %m Modified flag, text is " [+]"; " [-]" if 'modifiable' is off.
-"   %r Readonly flag, text is " [RO]".
-"   %y Type of file in the buffer, e.g., " [vim]".
-"   %= Separation point between left and right aligned items.
-"   %l Line number.
-"   %L Number of lines in buffer.
-"   %c Column number.
-"   %P percentage through buffer
-set statusline=%t\ %m%r%y%=(ascii=\%03.3b,hex=\%02.2B)\ (%l/%L,%c)\ (%P)
-set laststatus=2
-" change highlighting based on mode
-if version >= 700
-  highlight statusLine cterm=bold ctermfg=black ctermbg=blue
-  au InsertLeave * highlight StatusLine cterm=bold ctermfg=black ctermbg=blue
-  au InsertEnter * highlight StatusLine cterm=bold ctermfg=black ctermbg=green
+
+" air-line
+let g:airline_theme             = 'lucius'
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
 endif
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 
 " User remaps
 let mapleader = ","
